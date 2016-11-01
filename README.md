@@ -9,5 +9,6 @@ This is a project I'm currently working on and still needs the following before 
 * Detecting if optirun doesn't exit correctly
 * The ability to add and remove custom binaries (currently it uses the global apps list)
 * Basic code cleanup and commenting
+* Fix my lazy and spasticated coding style (enforcing pep8 would probably help)
 
 I will eventually get around to completing this however it is in a usable state currently and will allow you to run programs with optirun and select the bridge and vgl compression method you want. You can also close or kill the program from QOptirun if nessessary.
