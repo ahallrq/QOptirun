@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>694</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QOptirun</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="layout_appspresets">
+      <item>
+       <widget class="QTabWidget" name="programs_tabwidget">
+        <property name="tabPosition">
+         <enum>QTabWidget::South</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="documentMode">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="applications_tab">
+         <attribute name="title">
+          <string>Applications</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QTreeWidget" name="applications_list">
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="uniformRowHeights">
+             <bool>true</bool>
+            </property>
+            <property name="itemsExpandable">
+             <bool>false</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="expandsOnDoubleClick">
+             <bool>false</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Executable</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Arguments</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Bridge</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>VGLCompress</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>WaitForClose</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="presets_tab">
+         <attribute name="title">
+          <string>Presets</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTreeWidget" name="presets_list">
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="uniformRowHeights">
+             <bool>true</bool>
+            </property>
+            <property name="itemsExpandable">
+             <bool>false</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="expandsOnDoubleClick">
+             <bool>false</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Executable</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Arguments</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Bridge</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>VGLCompress</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>WaitForClose</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="preset_save">
+          <property name="text">
+           <string>Save</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="preset_load">
+          <property name="text">
+           <string>Load</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="preset_delete">
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_path">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Program Path</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="program_path"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="program_path_browse">
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_args">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Arguments</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="program_args"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_optirun">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Bridge</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="optirun_bridge">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Default</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>VirtualGL</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Primus</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>VGL Compress</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="optirun_vglcompress">
+        <item>
+         <property name="text">
+          <string>Default</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Proxy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RGB</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>YUV</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XV</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>JPEG</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>Compression only works with VirtualGL</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_progctl">
+      <item>
+       <widget class="QCheckBox" name="program_waitforclose">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Wait For Close</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="program_run">
+        <property name="text">
+         <string>Run</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="program_terminate">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Terminate</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+        <property name="arrowType">
+         <enum>Qt::NoArrow</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>applications_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>appListSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>presets_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>presetListSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>program_run</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runProgram()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>489</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>program_terminate</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>termProgram()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>489</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>appListSelect()</slot>
+  <slot>presetListSelect()</slot>
+  <slot>runProgram()</slot>
+  <slot>termProgram()</slot>
+ </slots>
+</ui>
